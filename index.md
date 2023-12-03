@@ -1,4 +1,4 @@
-## 1
+## Dec 1
 
 Okay, I'm starting the [December Adventure](https://eli.li/december-adventure) but worried my first project is too much slog and not enough adventure. I need to rebuild my website! So this means I'll need to make it more fun for myself: an actual adventure.
 
@@ -41,4 +41,33 @@ pandoc -s index.md -o index.html -H assets/includes/header.html -c assets/css/ma
 The result of all that is this page you're looking at now.
 
 Tomorrow: gallery view page experiments
+
+## Dec 2
+
+End of day 1 looked like this:
+
+![Day 1 text page](./assets/img/1.jpg)
+
+Images are converted and compressed with imagemagick:
+
+```
+convert source.png -resize 400x -quality 85% output.jpg
+```
+
+My partner has more experience as a professional web dev, looked at my day 1 writeup and was basically like "yeah i'm not reading that" but then gave me some good design and css feedback.
+
+I took that into account, then showed them an old experiment page I did with an overlay. She suggested I try it using css background with a container. Because I'm trying to use out of the box semantic web classless CSS I got into a roadblock where I wanted the speckled digital dirt as an overlay for the whole page whilst also having the gradient background. At first this appeared impossible, with whichever is latter replacing the earlier one (due to 'cascading') but after some searching I came across a solution to place them in the same css line and it worked. Then I added some background blur to the body to try to make the text more readable, and played around a bit to balance trying to soften the hard edge of the bounding body box versus readability. I'll try to get some feedback later on whether this is as compelling design, and to test the readability/accessibility.
+
+Here's the current page design:
+
+![Day 2 text page with new gravel overlay](./assets/img/2.jpg)
+
+## Dec 3
+
+Beginning of day 3, here is the site currently. I didn't quite get to the gallery pages yet, but will try today.
+
+![Day 3 text page, looking hopefully complete](./assets/img/3.jpg)
+
+I do need to do some accessibility checking later to make sure the overlaid but blurred body speckles don't make it hard to read the text.
+
 

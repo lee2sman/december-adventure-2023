@@ -105,7 +105,7 @@
 <header id="title-block-header">
 <h1 class="title">December Adventure</h1>
 </header>
-<h2 id="section">1</h2>
+<h2 id="dec-1">Dec 1</h2>
 <p>Okay, I’m starting the <a
 href="https://eli.li/december-adventure">December Adventure</a> but
 worried my first project is too much slog and not enough adventure. I
@@ -194,6 +194,49 @@ save:</p>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pandoc</span> <span class="at">-s</span> index.md <span class="at">-o</span> index.html <span class="at">-H</span> assets/includes/header.html <span class="at">-c</span> assets/css/main.css <span class="at">--metadata</span> title=<span class="st">&quot;December Adventure&quot;</span></span></code></pre></div>
 <p>The result of all that is this page you’re looking at now.</p>
 <p>Tomorrow: gallery view page experiments</p>
+<h2 id="dec-2">Dec 2</h2>
+<p>End of day 1 looked like this:</p>
+<figure>
+<img src="./assets/img/1.jpg" alt="Day 1 text page" />
+<figcaption aria-hidden="true">Day 1 text page</figcaption>
+</figure>
+<p>Images are converted and compressed with imagemagick:</p>
+<pre><code>convert source.png -resize 400x -quality 85% output.jpg</code></pre>
+<p>My partner has more experience as a professional web dev, looked at
+my day 1 writeup and was basically like “yeah i’m not reading that” but
+then gave me some good design and css feedback.</p>
+<p>I took that into account, then showed them an old experiment page I
+did with an overlay. She suggested I try it using css background with a
+container. Because I’m trying to use out of the box semantic web
+classless CSS I got into a roadblock where I wanted the speckled digital
+dirt as an overlay for the whole page whilst also having the gradient
+background. At first this appeared impossible, with whichever is latter
+replacing the earlier one (due to ‘cascading’) but after some searching
+I came across a solution to place them in the same css line and it
+worked. Then I added some background blur to the body to try to make the
+text more readable, and played around a bit to balance trying to soften
+the hard edge of the bounding body box versus readability. I’ll try to
+get some feedback later on whether this is as compelling design, and to
+test the readability/accessibility.</p>
+<p>Here’s the current page design:</p>
+<figure>
+<img src="./assets/img/2.jpg"
+alt="Day 2 text page with new gravel overlay" />
+<figcaption aria-hidden="true">Day 2 text page with new gravel
+overlay</figcaption>
+</figure>
+<h2 id="dec-3">Dec 3</h2>
+<p>Beginning of day 3, here is the site currently. I didn’t quite get to
+the gallery pages yet, but will try today.</p>
+<figure>
+<img src="./assets/img/3.jpg"
+alt="Day 3 text page, looking hopefully complete" />
+<figcaption aria-hidden="true">Day 3 text page, looking hopefully
+complete</figcaption>
+</figure>
+<p>I do need to do some accessibility checking later to make sure the
+overlaid but blurred body speckles don’t make it hard to read the
+text.</p>
 <footer>
         <p>
           Page last updated: 2023-12-02
