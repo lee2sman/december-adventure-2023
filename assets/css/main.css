@@ -1,18 +1,21 @@
+* { padding: 0; margin: 0; box-sizing: border-box; }
 html {
   height:100%;
   padding:env(safe-area-inset); /* for iphone notch */
   -webkit-text-size-adjust:100%; /* Prevent font scaling in landscape while allowing user zoom */
+  background:#f1f0e9; /* fallback 1 */
+  background-image:radial-gradient(#f1f0e9, #aceeb3);  /* fallback 2 */
+  background-image: url("../img/dust.png"),radial-gradient(#f1f0e9, #aceeb3);
+  background-size:cover; 
 }
 
 body {
+  backdrop-filter:blur(13px);
+  padding: 1em;
   min-height:100%;
   width: 86vmin;
   margin: auto;
   top:0;
-  background-color:#f1f0e9;
-  background-image:radial-gradient(#f1f0e9, #aceeb3);
-  background-attachment:fixed;
-  background-repeat:no-repeat;
   font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
   line-height:1.4;
   letter-spacing:-0.02em;
@@ -46,6 +49,8 @@ h1 {
   display:block;
   float:left;
   margin:0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* NAVIGATION */
@@ -103,6 +108,10 @@ a {
   text-decoration-thickness:1.5px;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 @media (hover:hover) {
   a:hover {
     text-decoration:dotted underline;
@@ -124,7 +133,7 @@ code {
     background: #f4f4f4;
     border: 1px solid #ddd;
     border-left: 3px solid #fd92f3;
-    color: #666;
+    color: #592d86; /* slightly darker than rebeccapurple */
     page-break-inside: avoid;
     font-family: Courier, monospace;
     font-size: 15px;
@@ -139,6 +148,17 @@ code {
 
 img {
   max-width:100%;
+}
+
+body > :not(header,footer) img {
+  margin: 2em 0 0 0; 
+}
+
+figure {
+  margin-bottom: 1em;
+  font-style: italic;
+  font-size: smaller;
+  color: #333;
 }
 
 /* FOOTER */
