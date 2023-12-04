@@ -7,10 +7,13 @@ html {
   background-image:radial-gradient(#f1f0e9, #aceeb3);  /* fallback 2 */
   background-image: url("../img/dust.png"),radial-gradient(#f1f0e9, #aceeb3);
   background-size:cover; 
+  z-index:-1;
 }
 
 body {
-  backdrop-filter:blur(13px);
+  -webkit-backdrop-filter:blur(15px);
+  backdrop-filter:blur(15px);
+  background-color: rgb(255,255,255, 0.1); 
   padding: 1em;
   min-height:100%;
   width: 86vmin;
