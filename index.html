@@ -201,7 +201,7 @@ save:</p>
 <figcaption aria-hidden="true">Day 1 text page</figcaption>
 </figure>
 <p>Images are converted and compressed with imagemagick:</p>
-<pre><code>convert source.png -resize 400x -quality 85% output.jpg</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">convert</span> source.png <span class="at">-resize</span> 400x <span class="at">-quality</span> 85% output.jpg</span></code></pre></div>
 <p>My partner has more experience as a professional web dev, looked at
 my day 1 writeup and was basically like “yeah i’m not reading that” but
 then gave me some good design and css feedback.</p>
@@ -268,6 +268,27 @@ this to try to simplify. I also played with widths, margins, colors,
 removing borders, and sizing. I think it was a nice foundation and I
 will ultimately likely make a number of changes here. Nothing to show
 yet, the work continues…</p>
+<p>I also thought I’d do an experiment to see if my text page would work
+as the homepage/landing page.</p>
+<p>I added just a few lines of css to override a few defaults trying to
+give a bit more oomph.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode css"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* assets/css/home.css */</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>body {</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">width</span>: <span class="dv">100</span><span class="dt">%</span><span class="op">;</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">36</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  backdrop-filter:<span class="fu">blur(</span><span class="dv">3</span><span class="dt">px</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<figure>
+<img src="./assets/img/4.jpg"
+alt="A test image of my current ‘homepage’ text using mostly the same css as a text page" />
+<figcaption aria-hidden="true">A test image of my current ‘homepage’
+text using mostly the same css as a text page</figcaption>
+</figure>
+<p>To be honest, I don’t think it feels like it ‘works.’ While I like
+having a quick bio/statement up front, I think this isn’t a strong
+landing page and will need to go back and look at some good landing page
+examples from other artists.</p>
 <p><em>Page last updated: 2023-12-03</em></p>
 <footer>
         <ul>

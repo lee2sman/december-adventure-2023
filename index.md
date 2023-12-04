@@ -50,7 +50,7 @@ End of day 1 looked like this:
 
 Images are converted and compressed with imagemagick:
 
-```
+```sh
 convert source.png -resize 400x -quality 85% output.jpg
 ```
 
@@ -75,6 +75,23 @@ I also did some [accessibility checking](https://www.accessibilitychecke.org) to
 Okay, so now that I'm happy with this text page, I finally turned to working on the project gallery page. 
 
 I again began by looking at Paloma's gallery page. In particular, I think the choice to use CSS is a smart one. I began by modifying and removing classes to try to get this closer to a classless CSS. I'm doing this to try to simplify. I also played with widths, margins, colors, removing borders, and sizing. I think it was a nice foundation  and I will ultimately likely make a number of changes here. Nothing to show yet, the work continues...
+
+I also thought I'd do an experiment to see if my text page would work as the homepage/landing page.
+
+I added just a few lines of css to override a few defaults trying to give a bit more oomph.
+
+```css
+/* assets/css/home.css */
+body {
+  width: 100%; 
+  font-size: 36px;
+  backdrop-filter:blur(3px);
+}
+```
+
+![A test image of my current 'homepage' text using mostly the same css as a text page](./assets/img/4.jpg)
+
+To be honest, I don't think it feels like it 'works.'  While I like having a quick bio/statement up front, I think this isn't a strong landing page and will need to go back and look at some good landing page examples from other artists.
 
 *Page last updated: 2023-12-03*
 
