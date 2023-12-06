@@ -101,3 +101,6 @@ On the train home I worked on the gallery page a bit, and did a little bit more 
 
 *Page last updated: 2023-12-04*
 
+## Dec 5
+
+Was busy on other projects today that didn't involve code. 
