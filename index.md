@@ -104,3 +104,27 @@ On the train home I worked on the gallery page a bit, and did a little bit more 
 ## Dec 5
 
 Was busy on other projects today that didn't involve code. 
+
+## Dec 6
+
+On the train ride home from teaching I did some more tests on the projects page. One question I had was whether I could replicate the gallery container individual items using semantic html rather than individual added classes. It seems like this approach should work, and I started modifying the css.
+
+After a good bit of wrangling I was successful. What this means is that one should be able to write the gallery landing page in straight markdown. So for example:
+
+```
+![Project 1 name](assets/img/projects/project1/1.jpg)
+```
+
+turns into:
+
+```
+<figure>
+<img src="../assets/img/projects/project1/1.jpg" alt="Project 1 name" />
+<figcaption aria-hidden="true">Project 1 name</figcaption>
+</figure>
+```
+
+And because of how I edited the CSS page this gets automatically placed into the CSS grid. I need to modify the CSS some more to get it chunkier in a way that I like. Here is the first working version, though not yet styled the way I want it, but it is a proof of concept and shows that markdown alone can produce the gallery page:
+
+![Projects gallery page v1](assets/img/6.jpg)
+

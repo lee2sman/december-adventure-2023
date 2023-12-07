@@ -312,6 +312,30 @@ work to be done.</p>
 <p><em>Page last updated: 2023-12-04</em></p>
 <h2 id="dec-5">Dec 5</h2>
 <p>Was busy on other projects today that didn’t involve code.</p>
+<h2 id="dec-6">Dec 6</h2>
+<p>On the train ride home from teaching I did some more tests on the
+projects page. One question I had was whether I could replicate the
+gallery container individual items using semantic html rather than
+individual added classes. It seems like this approach should work, and I
+started modifying the css.</p>
+<p>After a good bit of wrangling I was successful. What this means is
+that one should be able to write the gallery landing page in straight
+markdown. So for example:</p>
+<pre><code>![Project 1 name](assets/img/projects/project1/1.jpg)</code></pre>
+<p>turns into:</p>
+<pre><code>&lt;figure&gt;
+&lt;img src=&quot;../assets/img/projects/project1/1.jpg&quot; alt=&quot;Project 1 name&quot; /&gt;
+&lt;figcaption aria-hidden=&quot;true&quot;&gt;Project 1 name&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+<p>And because of how I edited the CSS page this gets automatically
+placed into the CSS grid. I need to modify the CSS some more to get it
+chunkier in a way that I like. Here is the first working version, though
+not yet styled the way I want it, but it is a proof of concept and shows
+that markdown alone can produce the gallery page:</p>
+<figure>
+<img src="assets/img/6.jpg" alt="Projects gallery page v1" />
+<figcaption aria-hidden="true">Projects gallery page v1</figcaption>
+</figure>
 <footer>
         <ul>
           <li>
