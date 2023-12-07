@@ -341,11 +341,9 @@ gallery page, it doesn’t automatically work well with linking each image
 to its own individual project page associated with the image.</p>
 <p>For example, to do this in pure markdown would be written thus:</p>
 <pre><code>[![Test project](assets/img/testproject1.jpg)](projects/testproject/index.html)</code></pre>
-Oof, that’s ugly code. And it no longer will produce the accessible
-<figure>
-<figcaption>
-<p>rendered output, and due to the ugly syntax may possible cause
-mistakes later if I mess up a bracket or parentheses.</p>
+<p>Oof, that’s ugly code. And it no longer will produce the accessible
+figure/figcaption rendered output, and due to the ugly syntax may
+possible cause mistakes later if I mess up a bracket or parentheses.</p>
 <p>I had to rethink my strategy. My options are:</p>
 <ul>
 <li>write this ugly markdown and just accept it</li>
@@ -354,14 +352,15 @@ mistakes later if I mess up a bracket or parentheses.</p>
 <li>potentially write a pandoc lua extension that gives me another
 option? This last one will require some research to see if it’s
 possible.</li>
-<li>Ah hahah. I found an <a
+<li>I found an <a
 href="https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md">alternative
-idea</a> on Stack Overflow, with a new syntax:
-<code>[&lt;img src="path/to/image.png"&gt;](https://link-to-your-URL/)</code></li>
+idea</a> on Stack Overflow, with a new syntax, see below, though it
+doesn’t automatically render the alt text to a caption.</li>
 </ul>
-<p>I’m currently leaning toward the last one as the least bad option.
-And maybe I can combine with a lua extension so that I get my preferred
-figcaption output. I’ll have to look into this.</p>
+<pre><code>[&lt;img alt=&quot;Project 1&quot; src=&quot;path/to/image.png&quot;&gt;](https://link-to-your-URL/)</code></pre>
+<p>I’m currently leaning toward this one but need to do more tests and
+research. I’m wondering if I can write a lua extension so that I get my
+preferred figure and figcaption output. I’ll have to look into this.</p>
 <footer>
         <ul>
           <li>

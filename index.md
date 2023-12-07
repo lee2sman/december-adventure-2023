@@ -136,7 +136,7 @@ For example, to do this in pure markdown would be written thus:
 [![Test project](assets/img/testproject1.jpg)](projects/testproject/index.html)
 ```
 
-Oof, that's ugly code. And it no longer will produce the accessible <figure><figcaption> rendered output, and due to the ugly syntax may possible cause mistakes later if I  mess up a bracket or parentheses.
+Oof, that's ugly code. And it no longer will produce the accessible figure/figcaption rendered output, and due to the ugly syntax may possible cause mistakes later if I  mess up a bracket or parentheses.
 
 I had to rethink my strategy. My options are:
 
@@ -144,6 +144,10 @@ I had to rethink my strategy. My options are:
 * switch back to html :(
 * write a combo of markdown and html (not a better solution)
 * potentially write a pandoc lua extension that gives me another option? This last one will require some research to see if it's possible.
-* Ah hahah. I found an [alternative idea](https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md) on Stack Overflow, with a new syntax: ```[<img src="path/to/image.png">](https://link-to-your-URL/)```
+* I found an [alternative idea](https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md) on Stack Overflow, with a new syntax, see below, though it doesn't automatically render the alt text to a caption. 
 
-I'm currently leaning toward the last one as the least bad option. And maybe I can combine with a lua extension so that I get my preferred figcaption output. I'll have to look into this.
+```
+[<img alt="Project 1" src="path/to/image.png">](https://link-to-your-URL/)
+```
+
+I'm currently leaning toward this one but need to do more tests and research. I'm wondering if I can write a lua extension so that I get my preferred figure and figcaption output. I'll have to look into this.
