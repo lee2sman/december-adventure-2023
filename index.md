@@ -119,7 +119,7 @@ turns into:
 
 ```
 <figure>
-<img src="../assets/img/projects/project1/1.jpg" alt="Project 1 name" />
+<img src="assets/img/projects/project1/1.jpg" alt="Project 1 name" />
 <figcaption aria-hidden="true">Project 1 name</figcaption>
 </figure>
 ```
@@ -128,17 +128,22 @@ And because of how I edited the CSS page this gets automatically placed into the
 
 ![Projects gallery page v1](assets/img/6.jpg)
 
-I did some more brainstorming and realized that if I wanted to make the images/text link to individual project pages that I'd have to do some more modification.
+After a pause I realized a fatal flaw. While this does render a nice gallery page, it doesn't automatically work well with linking each image to its own individual project page associated with the image.
 
-For example:
+For example, to do this in pure markdown would be written thus:
 
 ```
-[![Test project](assets/img/testproject1.jpg)](pages/testproject/index.html)
+[![Test project](assets/img/testproject1.jpg)](projects/testproject/index.html)
 ```
 
-This will produce different code than if I didn't try to make the image and text a link. It's also ugly markdown, potentially causing mistakes if/when I make syntax errors later.
+Oof, that's ugly code. And it no longer will produce the accessible <figure><figcaption> rendered output, and due to the ugly syntax may possible cause mistakes later if I  mess up a bracket or parentheses.
 
-I'll have to rethink my strategy. I think my options are:
+I had to rethink my strategy. My options are:
+
+* write this ugly markdown and just accept it
 * switch back to html :(
-* write a combo of markdown and html (ugly)
-* some kind of pandoc lua extension that can extract and wrap a link with url? the last one will require some research 
+* write a combo of markdown and html (not a better solution)
+* potentially write a pandoc lua extension that gives me another option? This last one will require some research to see if it's possible.
+* Ah hahah. I found an [alternative idea](https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md) on Stack Overflow, with a new syntax: ```[<img src="path/to/image.png">](https://link-to-your-URL/)```
+
+I'm currently leaning toward the last one as the least bad option. And maybe I can combine with a lua extension so that I get my preferred figcaption output. I'll have to look into this.

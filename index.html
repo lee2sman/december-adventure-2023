@@ -324,7 +324,7 @@ markdown. So for example:</p>
 <pre><code>![Project 1 name](assets/img/projects/project1/1.jpg)</code></pre>
 <p>turns into:</p>
 <pre><code>&lt;figure&gt;
-&lt;img src=&quot;../assets/img/projects/project1/1.jpg&quot; alt=&quot;Project 1 name&quot; /&gt;
+&lt;img src=&quot;assets/img/projects/project1/1.jpg&quot; alt=&quot;Project 1 name&quot; /&gt;
 &lt;figcaption aria-hidden=&quot;true&quot;&gt;Project 1 name&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 <p>And because of how I edited the CSS page this gets automatically
@@ -336,18 +336,32 @@ that markdown alone can produce the gallery page:</p>
 <img src="assets/img/6.jpg" alt="Projects gallery page v1" />
 <figcaption aria-hidden="true">Projects gallery page v1</figcaption>
 </figure>
-<p>I did some more brainstorming and realized that if I wanted to make
-the images/text link to individual project pages that I’d have to do
-some more modification.</p>
-<p>For example:</p>
-<pre><code>[![Test project](assets/img/testproject1.jpg)](pages/testproject/index.html)</code></pre>
-<p>This will produce different code than if I didn’t try to make the
-image and text a link. It’s also ugly markdown, potentially causing
-mistakes if/when I make syntax errors later.</p>
-<p>I’ll have to rethink my strategy. I think my options are: * switch
-back to html :( * write a combo of markdown and html (ugly) * some kind
-of pandoc lua extension that can extract and wrap a link with url? the
-last one will require some research</p>
+<p>After a pause I realized a fatal flaw. While this does render a nice
+gallery page, it doesn’t automatically work well with linking each image
+to its own individual project page associated with the image.</p>
+<p>For example, to do this in pure markdown would be written thus:</p>
+<pre><code>[![Test project](assets/img/testproject1.jpg)](projects/testproject/index.html)</code></pre>
+Oof, that’s ugly code. And it no longer will produce the accessible
+<figure>
+<figcaption>
+<p>rendered output, and due to the ugly syntax may possible cause
+mistakes later if I mess up a bracket or parentheses.</p>
+<p>I had to rethink my strategy. My options are:</p>
+<ul>
+<li>write this ugly markdown and just accept it</li>
+<li>switch back to html :(</li>
+<li>write a combo of markdown and html (not a better solution)</li>
+<li>potentially write a pandoc lua extension that gives me another
+option? This last one will require some research to see if it’s
+possible.</li>
+<li>Ah hahah. I found an <a
+href="https://stackoverflow.com/questions/61071158/add-image-with-link-in-githubs-readme-md">alternative
+idea</a> on Stack Overflow, with a new syntax:
+<code>[&lt;img src="path/to/image.png"&gt;](https://link-to-your-URL/)</code></li>
+</ul>
+<p>I’m currently leaning toward the last one as the least bad option.
+And maybe I can combine with a lua extension so that I get my preferred
+figcaption output. I’ll have to look into this.</p>
 <footer>
         <ul>
           <li>
