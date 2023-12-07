@@ -336,6 +336,18 @@ that markdown alone can produce the gallery page:</p>
 <img src="assets/img/6.jpg" alt="Projects gallery page v1" />
 <figcaption aria-hidden="true">Projects gallery page v1</figcaption>
 </figure>
+<p>I did some more brainstorming and realized that if I wanted to make
+the images/text link to individual project pages that I’d have to do
+some more modification.</p>
+<p>For example:</p>
+<pre><code>[![Test project](assets/img/testproject1.jpg)](pages/testproject/index.html)</code></pre>
+<p>This will produce different code than if I didn’t try to make the
+image and text a link. It’s also ugly markdown, potentially causing
+mistakes if/when I make syntax errors later.</p>
+<p>I’ll have to rethink my strategy. I think my options are: * switch
+back to html :( * write a combo of markdown and html (ugly) * some kind
+of pandoc lua extension that can extract and wrap a link with url? the
+last one will require some research</p>
 <footer>
         <ul>
           <li>

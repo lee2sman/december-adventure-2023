@@ -128,3 +128,17 @@ And because of how I edited the CSS page this gets automatically placed into the
 
 ![Projects gallery page v1](assets/img/6.jpg)
 
+I did some more brainstorming and realized that if I wanted to make the images/text link to individual project pages that I'd have to do some more modification.
+
+For example:
+
+```
+[![Test project](assets/img/testproject1.jpg)](pages/testproject/index.html)
+```
+
+This will produce different code than if I didn't try to make the image and text a link. It's also ugly markdown, potentially causing mistakes if/when I make syntax errors later.
+
+I'll have to rethink my strategy. I think my options are:
+* switch back to html :(
+* write a combo of markdown and html (ugly)
+* some kind of pandoc lua extension that can extract and wrap a link with url? the last one will require some research 
