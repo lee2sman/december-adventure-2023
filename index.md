@@ -152,6 +152,6 @@ I had to rethink my strategy. My options are:
 
 I'm currently leaning toward this one but need to do more tests and research. I'm wondering if I can write a lua extension so that I get my preferred figure and figcaption output. I'll have to look into this.
 
-Dec 7
+## Dec 7
 
 I didn't have a ton of time today but I spent an hour exploring writing lua extensions as tests for pandoc but I didn't get anything particularly useable yet. At this point I'm thinking I'll likely go back to pure HTML for the gallery! :0
