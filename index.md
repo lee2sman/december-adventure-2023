@@ -155,3 +155,38 @@ I'm currently leaning toward this one but need to do more tests and research. I'
 ## Dec 7
 
 I didn't have a ton of time today but I spent an hour exploring writing lua extensions as tests for pandoc but I didn't get anything particularly useable yet. At this point I'm thinking I'll likely go back to pure HTML for the gallery! :0
+
+## Dec 8
+
+More gallery rendering work.
+
+I read up about [image](https://pandoc.org/chunkedhtml-demo/8.17-images.html) options in pandoc markdown, and decided that this markdown solution to producing a gallery of images (with links) with captions would be too monstrous:
+
+```markdown
+[![Lost Angeles](../assets/img/projects/lost/lost1.png)](./projects/lost-angeles){.gallery-item}  
+**Lost Angeles**  
+Livestreamed Performance  
+2016  
+```
+
+I don't think that's really any better than this:
+
+```html
+<div class="gallery-item">
+  <a href="./projects/lost-angeles/">
+    <img src="../assets/img/projects/lost/lost1.png" alt="Lost Angeles">
+    <p><strong>Lost Angeles</strong></p>
+    <p>Livestreamed Performance</p>
+    <p>2016</p>
+  </a>
+</div>
+
+```
+
+The latter is also easier to debug and has less chance of making a syntax error.
+
+![Day 8 - excerpt of gallery](./assets/img/8.jpg)
+
+I can't believe how many hours it took me to explore and then eventually settle back pretty much where I started. Anyway, next step will be to actually clean up images, move them into directories, and then build this page. Still a bit more CSS cleanup as well.
+
+
