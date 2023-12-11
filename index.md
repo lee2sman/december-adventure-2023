@@ -189,4 +189,10 @@ The latter is also easier to debug and has less chance of making a syntax error.
 
 I can't believe how many hours it took me to explore and then eventually settle back pretty much where I started. Anyway, next step will be to actually clean up images, move them into directories, and then build this page. Still a bit more CSS cleanup as well.
 
+## Dec 9
 
+Stayed off the computer today.
+
+## Dec 10
+
+Stayed off the computer again today.
