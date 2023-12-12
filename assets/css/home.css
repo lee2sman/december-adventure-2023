@@ -1,0 +1,30 @@
+html {
+
+  background-image: url("../img/desk-gaussian-smaller.jpg");
+  background-size:cover; 
+}
+body {
+  font-size: large;
+  backdrop-filter:blur(15px);
+}
+h1, p {
+  background-color: white;
+  padding: 0.5rem;
+}
+figure > img {
+  width: 40vmin;
+  height: auto;
+}
+figcaption {
+  color: white;
+}
+@media only screen and (max-width:784px) {
+
+  body {
+    width: 100%;
+  }
+  #header-image {
+    width: 80px;
+  }
+}
+
