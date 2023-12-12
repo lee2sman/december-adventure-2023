@@ -196,3 +196,42 @@ Stayed off the computer today.
 ## Dec 10
 
 Stayed off the computer again today.
+
+## Dec 11
+
+When you get bogged down, pivot. At least that's what I tried. I didn't feel like working on organizing my project image directories yet or building a template project page, and was still bummed by my gallery markdown generator turning up lemons. So I decided to work on the landing page. On a whim, on the train to school on the way to my last Programming for Visual Artists class I started trying something out, then continued in my office before class, and then again on the train home again tonight. And I'm pretty happy with what I've done though I've yet to get outside feedback, and it's possible I may feel differently later. So caveat emptor: this could all change tomorrow.
+
+![screenshot of prototype landing page](assets/img/11.jpg)
+
+What I like about it: it's both chunky and readable. It feels like a cross between my competing aesthetic and project goals. Text-oriented, but still supporting images. And a nice 'timeless' design (whatever that means). It doesn't look totally out of place from my programmer-y friends sites, but also isn't totally 180 degrees from an artist site. Though perhaps too much text up front?
+
+Next I worked on the file size issue. The background jpeg was pretty big, 422k. Yikes. My goal is to try to make the image look as hi res as possible while as low file size as possible. I know that's a squishy goal. Should I start with the lowest resolution and use a media query to switch out images and serve a higher resolution file on bigger screens or with certain browser indicators? I'm not certain.
+
+First I reached for the imagemagick 'swiss army knife' tool, one of my beloved software tools. I ran some imagemagick conversion tests to try things out trying to chase the goal of highest quality resolution while minimizing image size. 
+
+I tried a number of ways to limit file size. I took a somewhat staged photo of my messy desk in my office at school, then converted to jpeg and limited the image to 1920x1280. The image was 422k. I read a [stackoverflow answer](https://stackoverflow.com/questions/7261855/recommendation-for-compressing-jpg-files-with-imagemagick) and a short [article](https://dev.to/feldroy/til-strategies-for-compressing-jpg-files-with-imagemagick-5fn9) with several techniques that I tried out: "lighthouse" image compression, gaussian blur, and a mix of the two. I didn't think the lighthouse approach looked good, and neither did the mixture one. The gaussian blur looked best to me and was compressed almost as much.
+
+```sh
+#convert with gaussian blur and 50% quality
+convert desk.jpg -strip -interlace Plane -gaussian-blur 0.05 -quality 50% desk-gaussian.jpg
+```
+
+Then I tried out a different imagemagick technique, the "define" parameter. To be honest, I'm not sure what this algorithm is, but I had success with it as well, and it's a more straightforward command. Essentially, you list what filesize you're targeting. When I specified 200k I got an image I could accept. When I tried 100k it was too low resolution. 150k was the minimum I found to be tolerable.
+
+```sh
+#convert using defined max file size
+convert desk.jpg -define jpeg:extent=150kb desk-limit-150k.jpg
+```
+
+The compression technique was different between these the gaussian blur and the defined filesize approach but it was a toss-up which one was better. 
+
+![My messy desk with gaussian blur and 50% image quality](assets/img/desk-gaussian-smaller.jpg)
+
+<figure>
+<img src="assets/img/desk-limit200k.jpg"
+alt="Same image processed with defined compression size of 200k, slighly higher res and file size" loading="lazy" />
+<figcaption aria-hidden="true">Same image processed with defined
+compression size of 200k, slighly higher res and file size and lazy loading.</figcaption>
+</figure>
+
+Okay, I think I'm at a good stopping point tonight. I'll go back to working on the gallery pages next I think.
