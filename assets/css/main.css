@@ -81,7 +81,8 @@ nav ul li a{
 
 @media (hover:hover) {
   nav ul li:hover {
-    filter:invert();
+    /* filter:invert(); */
+    background-color: white;
     text-decoration:none;
   }
 
