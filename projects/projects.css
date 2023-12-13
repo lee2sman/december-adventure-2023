@@ -7,13 +7,14 @@ html {
   padding:env(safe-area-inset); /* for iphone notch */
   -webkit-text-size-adjust:100%; /* Prevent font scaling in landscape while allowing user zoom */
 
-  background:#f1f0e9; /* fallback 1 */
-  background-image:radial-gradient(#f1f0e9, #aceeb3);  /* fallback 2 */
-  background-image: url("../assets/img/dust.png"),radial-gradient(#f1f0e9, #aceeb3);
-  background-size:cover; 
+  /* background:#f1f0e9; /* fallback 1 */ */
+  /* background-image:radial-gradient(#f1f0e9, #aceeb3);  /* fallback 2 */ */
+/*   background-image: url("../assets/img/dust.png"),radial-gradient(#f1f0e9, #aceeb3); */
+  /* background-size:cover;  */
 }
 
 body {
+  background-color:black;
   position:absolute;
   min-height:100%;
   width:100%;
@@ -303,7 +304,7 @@ figure img, .gallery-item img {
   .gallery {
     /* margin: 0 0.5rem 0 0.5rem; */
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(450px, 1fr)); 
+    grid-template-columns:repeat(auto-fit, minmax(650px, 1fr)); 
     justify-content:flex-start;
     justify-items:stretch;
  /*   gap: 0.5rem; */
