@@ -239,4 +239,8 @@ Back to working on the gallery page. I took a different tact and decided to brow
 
 Here's some sites I liked: This very simple [2up](https://monicabusquets.com/) gallery page, though the individual pages are slow and hard to read; this [single column gallery](https://dccw.info/) looks good and I like the interstitial text descriptors between, though there are no individual artwork pages; this [random placement portfolio](https://raphaelwicki.com/Archive-1) I thought was simple and looked nice and bold with background black and individual project pages were clear enough but needed a lot of scrolling.
 
+Based on this, I decided to temporarily abandon my work on the gallery page I had done previously, and now I did some basic flexbox layouts. Here's a super simple one, no gaps, 2 columns.
 
+![Responsive layout with flexbox](./assets/img/12.jpg)
+
+Will try more on the train tomorrow during my last day of class for the semester.
