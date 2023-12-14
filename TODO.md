@@ -12,3 +12,9 @@
 ## Home
 * [X] make a test homepage. what should be here? text page?
 * [X] explore more landing pages - find at least 3 that can inform the new direction/design
+
+## Frontmatter
+
+* Add og info: type can be "article" (blogposts), otherwise it's "website"
+* add og description
+* automate: og url and og title should just be inherited
