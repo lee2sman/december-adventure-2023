@@ -255,3 +255,6 @@ Here's the now page, albeit with some bugs. I need to add some background color 
 
 Here's a bookmark to a [2up gallery page](https://valentine-thebaut.fr/) made with Cargo. I want to revisit this later when working on individual project pages, though the nav is bad and pages lack text descriptions and links. This is the [other gallery page](https://raphaelwicki.com/Archive-1) I built in flexbox before the current simpler design, but I think its nav at the top is simpler and maybe better fits my page design than the one I have currently.
 
+## Dec 14
+
+Worked on school things today. In the evening, Laura's flower shop had an opening party that we went to.
