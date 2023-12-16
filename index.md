@@ -258,3 +258,7 @@ Here's a bookmark to a [2up gallery page](https://valentine-thebaut.fr/) made wi
 ## Dec 14
 
 Worked on school things today. In the evening, Laura's flower shop had an opening party that we went to.
+
+## Dec 15
+
+Editor meetings and school work day. 
