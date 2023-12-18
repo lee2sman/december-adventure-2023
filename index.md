@@ -262,3 +262,15 @@ Worked on school things today. In the evening, Laura's flower shop had an openin
 ## Dec 15
 
 Editor meetings and school work day. 
+
+## Dec 16 
+
+Grading, cooking, then performance and solstice party night.
+
+## Dec 17
+
+Worked a little bit on the site tonight. Started working on an individual project page template and tried a few different layout and modifications in CSS, mostly using a column approach. In some tests I tried running images full-width and in others I had a centered column. I'll spend more time on this in the coming days.
+
+
+
+
