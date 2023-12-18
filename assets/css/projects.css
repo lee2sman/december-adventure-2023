@@ -128,3 +128,46 @@ nav ul li a{
     max-width: 100%;
   }
 }
+
+/* FOOTER */
+
+footer {
+  clear:both;
+  width: 86vmin;
+  display:block;
+  margin: auto;
+  margin-top:1em;
+  padding:10px 0px;
+  font-style:italic;
+  font-size:0.8em;
+}
+
+footer ul {
+  float:left;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  float:left;
+}
+
+footer ul li {
+  float:left;
+  padding:3px 8px 3px 0px;
+  margin:6px 8px 6px 0px;
+}
+
+footer ul li a{
+  text-decoration:none;
+}
+
+footer ul li img {
+  height:30px;
+  width:30px;
+}
+
+@media (hover:hover) {
+  footer ul li:hover {
+    color:#000000;
+    filter:invert();
+  }
+}
