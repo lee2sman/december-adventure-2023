@@ -271,6 +271,47 @@ Grading, cooking, then performance and solstice party night.
 
 Worked a little bit on the site tonight. Started working on an individual project page template and tried a few different layout and modifications in CSS, mostly using a column approach. In some tests I tried running images full-width and in others I had a centered column. I'll spend more time on this in the coming days.
 
+## Dec 18 and 19
 
+End of semester grading work and hanging out with my partner, watching a movie, but no coding work.
 
+## Dec 20
 
+Worked on the now page a bit to clean up the design.
+
+![Now page with improved background on the nav and headers for readability](./assets/img/20.jpg)
+
+I did some work on the resources page as well. I tried finding a good background image, but I think I could still choose better. In any case, here's my placeholder for now. I'm also uncertain if "resources" is the right term for the page. Should it be a "wiki" or something else? I know I want to link to my workshops, classes, tutorials, podcast, things like that. I guess some of those are also "projects" but I'm thinking of "Projects" as holding my art projects and this "Resources" page as my teaching and organizing. Will think more on this, but for now, "Resources" works.
+
+![Resources page with placeholder background img](./assets/img/20-2.jpg)
+
+Hmm, I think the Resources background text blocks look better than the Now page groupings. It's a bit much to have those separations between the individual paragraphs.
+
+Okay, after some crazy css wrangling (and help from my partner), here's a version of the Now page with the paragraphs grouped together. I think it looks a bit better.
+
+![Resources page again with paragraphs grouped together](../assets/img/20-3.jpg)
+
+This is still "classless" but I'm using some bizarre css-selector combos so I'm not sure it's worth not using classes/id's for this!
+
+This seems like a kludgy solution, but on second thought, there is a certain charm if not elegance:
+
+```
+h1 {
+ margin-bottom: 1rem;
+}
+h2, h3 {
+  clear: both;
+  display: table;
+  background-color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+h3 ~ p {
+  background-color: white;
+  margin: 0; 
+}
+```
+
+Well, it works.
+
+I realize I have been putting off the inevitable organizing task of grabbing photos, placing them in directories, and making individual project pages. If any part of site-building demanded automation, that would be it. I hope I can pivot to this soon. I want to finish up the site design this week and deploy by the end of the month.
