@@ -289,7 +289,7 @@ Hmm, I think the Resources background text blocks look better than the Now page 
 
 Okay, after some crazy css wrangling (and help from my partner), here's a version of the Now page with the paragraphs grouped together. I think it looks a bit better.
 
-![Resources page again with paragraphs grouped together](../assets/img/20-3.jpg)
+![Resources page again with paragraphs grouped together](./assets/img/20-3.jpg)
 
 This is still "classless" but I'm using some bizarre css-selector combos so I'm not sure it's worth not using classes/id's for this!
 
@@ -318,4 +318,4 @@ I realize I have been putting off the inevitable organizing task of grabbing pho
 
 A short while later, trying a new background image out for the resources page. I think this looks better.
 
-![resources page with background image from a flea market in berlin showing various 'resources'](../assets/img/20-4.jpg)
+![resources page with background image from a flea market in berlin showing various 'resources'](./assets/img/20-4.jpg)
