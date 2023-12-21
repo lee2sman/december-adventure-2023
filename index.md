@@ -315,3 +315,7 @@ h3 ~ p {
 Well, it works.
 
 I realize I have been putting off the inevitable organizing task of grabbing photos, placing them in directories, and making individual project pages. If any part of site-building demanded automation, that would be it. I hope I can pivot to this soon. I want to finish up the site design this week and deploy by the end of the month.
+
+A short while later, trying a new background image out for the resources page. I think this looks better.
+
+![resources page with background image from a flea market in berlin showing various 'resources'](../assets/img/20-4.jpg)
