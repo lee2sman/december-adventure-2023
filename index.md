@@ -319,3 +319,7 @@ I realize I have been putting off the inevitable organizing task of grabbing pho
 A short while later, trying a new background image out for the resources page. I think this looks better.
 
 ![resources page with background image from a flea market in berlin showing various 'resources'](./assets/img/20-4.jpg)
+
+## Dec 24
+
+A few days off. Tonight I did a [backup of custom functions](https://tildegit.org/exquisitecorp/social-software) from the [tilde server](https://leetusman.com/nosebook/computer-systems-social-networks) I created for the Social Software class. This isn't a backup of the whole server or its software - it's more like the students' custom functions, my intro, and then our created command line *thumb* program (a function) that is like a wrapper around *finger* that creates a tiny little social media on our server. I retired the server so I don't have to pay a monthly fee out of pocket after the course ends. 
