@@ -108,7 +108,8 @@
 <header id="title-block-header">
 <h1 class="title">December Adventure</h1>
 </header>
-<h2 id="dec-1">Dec 1</h2>
+<p>, though I’ll want to also have the project description there, before
+any links## Dec 1</p>
 <p>Okay, I’m starting the <a
 href="https://eli.li/december-adventure">December Adventure</a> but
 worried my first project is too much slog and not enough adventure. I
@@ -607,20 +608,21 @@ grouped together</figcaption>
 combos so I’m not sure it’s worth not using classes/id’s for this!</p>
 <p>This seems like a kludgy solution, but on second thought, there is a
 certain charm if not elegance:</p>
-<pre><code>h1 {
- margin-bottom: 1rem;
-}
-h2, h3 {
-  clear: both;
-  display: table;
-  background-color: white;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-h3 ~ p {
-  background-color: white;
-  margin: 0; 
-}</code></pre>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode css"><code class="sourceCode css"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>h1 {</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a> <span class="kw">margin-bottom</span>: <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>h2<span class="op">,</span> h3 {</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">clear</span>: <span class="dv">both</span><span class="op">;</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span>: <span class="dv">table</span><span class="op">;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">white</span><span class="op">;</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-top</span>: <span class="dv">0.5</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-bottom</span>: <span class="dv">0.5</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>h3 <span class="op">~</span> p {</span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">background-color</span>: <span class="cn">white</span><span class="op">;</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span>: <span class="dv">0</span><span class="op">;</span> </span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
 <p>Well, it works.</p>
 <p>I realize I have been putting off the inevitable organizing task of
 grabbing photos, placing them in directories, and making individual
@@ -663,8 +665,53 @@ myself.</p>
 project pages.</p>
 <h2 id="dec-30">Dec 30</h2>
 <p>My parents visited for a few days and I did some work on the site but
-haven’t finished yet. Will have to keep going into January. Not sure if
-I’ll update here again.</p>
+haven’t finished yet. Will have to keep going into January.</p>
+<p>Spent time the past week or two finishing the Programming in Lua
+book, and am now onto another Lua book for bedtime reading. I also
+checked out winduptoy’s Lichen ssg, and review some forth / html gui
+ideas.</p>
+<p>On my webiste project I’ve done some more tweaking and playing.
+Tonight I revisited my gallery page yet again. Maybe simple is best. I
+spent time looking at <a href="https://arambartholl.com/archive/">Aram’s
+website Works archive</a> and <a
+href="https://increpare.com">Increpare’s</a> and while I can’t quite
+match their output, I do pump out work pretty consistently. They both
+use a simple grid layout, with title, medium, year, thumbnail - and I
+think I should try that. Aram’s I thought was an even grid but it’s more
+a coincidence that he chooses the same size image. Increpare’s is a
+consistent grid.</p>
+<figure>
+<img src="./assets/img/30.jpg" alt="Simple grid gallery page" />
+<figcaption aria-hidden="true">Simple grid gallery page</figcaption>
+</figure>
+<p>I still need to work on this a bit, and it’s uber-basic, but I think
+it will serve my purpose of allowing for displaying lots of work. I got
+down a first version of the responsive view but it’s not dialed down
+yet. Images are stretching funny.</p>
+<p>Adding the year (or year and month) is important, to show that the
+page is dynamic with new projects. Adding the “medium” I think is
+informative here as well. So here’s each label:</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode txt"><code class="sourceCode default"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>Title (in bold)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>medium</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>year</span></code></pre></div>
+<p>I re-visited <a href="https://elliott.computer/">Elliott’s
+website</a> and he’s again changed it up completely. This is the second
+site redesign in a month or so. I admire his experimentation though I
+don’t think I can expect my guests to come back as often or to be as
+jazzed at these kinds of big changes. But still, how can I maintain some
+of his experimentation and flexibility to add new things on the landing?
+Maybe drop-in hand-authored html? Images wrapped in links? Will keep in
+mind some ideas.</p>
+<p>Next step is to improve some of the responsive Css for the gallery
+page, then work on more on the design for the individual project page.
+Aram’s <a href="https://arambartholl.com/this-is-fine/">project page</a>
+template is again a good model I think, though I’ll want to also have
+the project description there, before any links.</p>
+<p>I’m not quite in the home stretch but I’m getting there. I’m feeling
+like all the parts are pretty much in place. I just need to finish the
+project page, clean up CSS differences between pages and in the nav, and
+then complete a consistent, replicable workflow for updating pages.</p>
 <footer>
         <ul>
           <li>

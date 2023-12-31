@@ -1,4 +1,4 @@
-## Dec 1
+, though I'll want to also have the project description there, before any links## Dec 1
 
 Okay, I'm starting the [December Adventure](https://eli.li/december-adventure) but worried my first project is too much slog and not enough adventure. I need to rebuild my website! So this means I'll need to make it more fun for myself: an actual adventure.
 
@@ -295,7 +295,7 @@ This is still "classless" but I'm using some bizarre css-selector combos so I'm 
 
 This seems like a kludgy solution, but on second thought, there is a certain charm if not elegance:
 
-```
+```css
 h1 {
  margin-bottom: 1rem;
 }
@@ -336,4 +336,26 @@ Started building out some frontmatter system for the individual project pages.
 
 ## Dec 30
 
-My parents visited for a few days and I did some work on the site but haven't finished yet. Will have to keep going into January. Not sure if I'll update here again.
+My parents visited for a few days and I did some work on the site but haven't finished yet. Will have to keep going into January.
+
+Spent time the past week or two finishing the Programming in Lua book, and am now onto another Lua book for bedtime reading. I also checked out winduptoy's Lichen ssg, and review some forth / html gui ideas.
+
+On my webiste project I've done some more tweaking and playing. Tonight I revisited my gallery page yet again. Maybe simple is best. I spent time looking at [Aram's website Works archive](https://arambartholl.com/archive/) and [Increpare's](https://increpare.com) and while I can't quite match their output, I do pump out work pretty consistently. They both use a simple grid layout, with title, medium, year, thumbnail - and I think I should try that. Aram's I thought was an even grid but it's more a coincidence that he chooses the same size image. Increpare's is a consistent grid. 
+
+![Simple grid gallery page](./assets/img/30.jpg)  
+
+I still need to work on this a bit, and it's uber-basic, but I think it will serve my purpose of allowing for displaying lots of work. I got down a first version of the responsive view but it's not dialed down yet. Images are stretching funny.
+
+Adding the year (or year and month) is important, to show that the page is dynamic with new projects. Adding the "medium" I think is informative here as well. So here's each label:
+
+```txt
+Title (in bold)
+medium
+year
+```
+
+I re-visited [Elliott's website](https://elliott.computer/) and he's again changed it up completely. This is the second site redesign in a month or so. I admire his experimentation though I don't think I can expect my guests to come back as often or to be as jazzed at these kinds of big changes. But still, how can I maintain some of his experimentation and flexibility to add new things on the landing? Maybe drop-in hand-authored html? Images wrapped in links? Will keep in mind some ideas.
+
+Next step is to improve some of the responsive Css for the gallery page, then work on more on the design for the individual project page. Aram's [project page](https://arambartholl.com/this-is-fine/) template is again a good model I think, though I'll want to also have the project description there, before any links.
+
+I'm not quite in the home stretch but I'm getting there. I'm feeling like all the parts are pretty much in place. I just need to finish the project page, clean up CSS differences between pages and in the nav, and then complete a consistent, replicable workflow for updating pages.
