@@ -323,3 +323,17 @@ A short while later, trying a new background image out for the resources page. I
 ## Dec 24
 
 A few days off. Tonight I did a [backup of custom functions](https://tildegit.org/exquisitecorp/social-software) from the [tilde server](https://leetusman.com/nosebook/computer-systems-social-networks) I created for the Social Software class. This isn't a backup of the whole server or its software - it's more like the students' custom functions, my intro, and then our created command line *thumb* program (a function) that is like a wrapper around *finger* that creates a tiny little social media on our server. I retired the server so I don't have to pay a monthly fee out of pocket after the course ends. 
+
+## Dec 25
+
+Worked on some styling cleanup on a few pages of my website design. After a few days away I still feel pretty solid on the design and just need to dedicate a few hours to building the gallery pages now, but I'm not sure when that time will come since it's a busy "vacation" this week. I'd really like to be done by the end of the year.
+
+Looked at my old photocopyfier program. I'd like to port this to love2d with a gui I think. 
+
+Spent some time with Runna. I think the game is compelling, it just needs final graphics/theming. I'm wondering if it makes sense to partner with someone else, or purchase/find assets, or try to draw them myself.
+
+Started building out some frontmatter system for the individual project pages.
+
+## Dec 30
+
+My parents visited for a few days and I did some work on the site but haven't finished yet. Will have to keep going into January. Not sure if I'll update here again.
