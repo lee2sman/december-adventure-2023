@@ -4,15 +4,10 @@ html {
   padding:env(safe-area-inset); /* for iphone notch */
   -webkit-text-size-adjust:100%; /* Prevent font scaling in landscape while allowing user zoom */
   background:#f1f0e9; /* fallback 1 */
-   background-image:radial-gradient(#f1f0e9, #aceeb3);  /* fallback 2 */ 
-   background-image: url("../img/dust.png"),radial-gradient(#f1f0e9, #aceeb3); 
-  background-size:cover; 
 }
 body {
   margin: 0;
   padding-top: 1em; 
-}
-body {
   -webkit-backdrop-filter:blur(15px);
   backdrop-filter:blur(15px);
   background-color: rgb(255,255,255, 0.1); 
@@ -26,23 +21,32 @@ body {
   letter-spacing:-0.02em;
   overflow-wrap: break-word;
 }
-
-
-img {
+p {
+/* font-size: calc(10px + .5vw); */
+}
+.item {
+  height: 30vmax;
+}
+/* should probably be in a div for each item*/
+.item img {
   width: 100%;
+  height: 20vmax;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* padding: 0 24px; */
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 50%; /* change this and next line to 25% for four or 100% for one */
-  max-width: 50%;
-  /* padding: 0 12px; */
+  flex: 25%; /* change this and next line to 25% for four or 100% for one */
+  max-width: 25%;
+   padding: 12px; 
 }
 
 /* HEADER */
@@ -118,14 +122,22 @@ nav ul li a{
 .column img {
 /*  margin-top: 24px;  */
   vertical-align: middle;
-  border-radius: 8px;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 860px) {
+/* responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 1020px) {
+  p {
+    font-size: 3vw;
+  }
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+  .item {
+    max-height: 30vh;
+  }
+  .item img{
+    object-fit: cover;
   }
 }
 
