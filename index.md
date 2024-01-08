@@ -359,3 +359,9 @@ I re-visited [Elliott's website](https://elliott.computer/) and he's again chang
 Next step is to improve some of the responsive Css for the gallery page, then work on more on the design for the individual project page. Aram's [project page](https://arambartholl.com/this-is-fine/) template is again a good model I think, though I'll want to also have the project description there, before any links.
 
 I'm not quite in the home stretch but I'm getting there. I'm feeling like all the parts are pretty much in place. I just need to finish the project page, clean up CSS differences between pages and in the nav, and then complete a consistent, replicable workflow for updating pages.
+
+## Jan 07
+
+I have returned. After New Year's, yadda yadda yadda, I'm on vacation in Portland. Tonight I finally sat down for a few minutes, and with fresh eyes, fixed a few bugs on the gallery page. I've also made it look pretty blocky basic, oy, but that's what I want now.
+
+![Latest cleanup of the projects page, and yes, I'm tired of these random image stand-ins too](./assets/img/01-07.jpg)
