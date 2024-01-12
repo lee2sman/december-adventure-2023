@@ -1,4 +1,4 @@
-, though I'll want to also have the project description there, before any links## Dec 1
+## Dec 1  
 
 Okay, I'm starting the [December Adventure](https://eli.li/december-adventure) but worried my first project is too much slog and not enough adventure. I need to rebuild my website! So this means I'll need to make it more fun for myself: an actual adventure.
 
@@ -365,3 +365,13 @@ I'm not quite in the home stretch but I'm getting there. I'm feeling like all th
 I have returned. After New Year's, yadda yadda yadda, I'm on vacation in Portland. Tonight I finally sat down for a few minutes, and with fresh eyes, fixed a few bugs on the gallery page. I've also made it look pretty blocky basic, oy, but that's what I want now.
 
 ![Latest cleanup of the projects page, and yes, I'm tired of these random image stand-ins too](./assets/img/01-07.jpg)
+
+## Jan 12
+
+'m on a vacation of sorts, though still doing some prep for class next year. I've been submitting paperwork, tightening and studying and prepping learning outcomes. This isn't the most creative, but it's required to get my Programming Games coures approved for next year.
+
+This morning we escaped a blizzard up in the Columbia River Gorge and headed in an early bus back to PDX. We visited a nice cafe downtown in a hotel, got some food and coffee, and then I spent a couple hours researching fonts and testing more design.
+
+Originally I had thought I'd do no font loading, but I found I liked a more exciting and strange font. I hadn't looked into font size and formats in a long time. It seems all browsers work with woff2 and that they are quite compact, so I'll load 1 or 2 fonts max that add some spice to my website. My next steps will be to clean up the header for the gallery page.
+
+![this project blog page showing new fonts for the headers](./assets/img/01-12.jpg)  

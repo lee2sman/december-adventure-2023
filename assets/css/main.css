@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Mimoid;
+  src: url(../fonts/MimoidVF.woff2)
+}
+@font-face {
+  font-family: Pitagon;
+  src: url(../fonts/PitagonSans-Regular.woff2)
+}
 * { padding: 0; margin: 0; box-sizing: border-box; }
 html {
   height:100%;
@@ -18,7 +26,8 @@ body {
   width: 86vmin;
   margin: auto;
   top:0;
-  font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  font-family: Pitagon, Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace; 
+  font-size: x-large !important;
   line-height:1.4;
   letter-spacing:-0.02em;
   overflow-wrap: break-word;
@@ -46,7 +55,9 @@ header {
     filter: drop-shadow(16px 16px 20px red) invert(75%);
   }
 }
-
+h1, h2, h3 {
+  font-family: Mimoid;
+}
 h1 {
   display:block;
   float:left;
@@ -97,6 +108,7 @@ h2 {
   text-transform:uppercase;
   font-size:1.3em;
   margin-bottom:1em;
+  margin-top:1em;
   letter-spacing:.02em;
   padding: 0.3rem;
 }

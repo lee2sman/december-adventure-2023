@@ -16,7 +16,7 @@ body {
  /* width: 86vmin; */
   margin: auto;
   top:0;
-  font-family:Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace;
+  font-family: Pitagon, Menlo, Monaco, Consolas, Liberation Mono, Lucida Console, monospace; 
   line-height:1.4;
   letter-spacing:-0.02em;
   overflow-wrap: break-word;
